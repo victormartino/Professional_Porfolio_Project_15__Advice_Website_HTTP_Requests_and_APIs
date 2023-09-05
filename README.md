@@ -1,7 +1,5 @@
 # PyWisdom - HTTP Requests and APIs Showcase
 
-![PyWisdom](https://www.pexels.com/photo/person-holding-opened-book-1296720/)
-
 PyWisdom is a Python project that serves as a showcase of HTTP requests, APIs, and Flask web development. It provides users with daily motivational and knowledge-based advice. The project is designed to demonstrate how to make HTTP requests to an external API and display the results on a web page using Flask.
 
 ## Acknowledgements
