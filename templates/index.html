@@ -1,0 +1,21 @@
+{% include "header.html" %}
+
+<div class="content">
+    <div class="px-4 py-1 my-3 text-center" style="color: white;">
+        <img class="d-block mx-auto mb-2" src="{{ url_for('static', filename='img/logo.png') }}" alt="PyWisdom logo" width="250" height="250" style="filter: drop-shadow(20px 20px 10px black)">
+                <h1 class="display-6 fw-bold text-white">PyWisdom</h1>
+                {% if not advice: %}
+                <h3 class="text-white pt-2" style="font-weight: 300; font-size: 22px;">Your source of daily motivation and knowledge.</h3>
+                {% else: %}
+                <h4 class="text-white pt-2" style="font-weight: 200; font-size: 20px;">"{{ advice  }}"</h4>
+                {% endif %}
+                <form method="POST">
+                    <label class="btn btn-lg btn-dark rounded-0 mt-4 py-3 border border-light"
+                           style="background-color: #000 !important;">Get Advice
+                            <input type="submit" style="display: none;" onchange="this.form.submit()">
+                    </label>
+                </form>
+            </div>
+          </div>
+
+{% include "footer.html" %}
